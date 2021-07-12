@@ -1,10 +1,12 @@
 :root {
   --bodyBackground: #000;
 
-  --boxColor: #0ff7;
+  --boxColor: #f0d7;
   --rotateSpeed: 30s;
   --bounceSpeed: 1.5s;
   --ballBackground: yellow;
+  --floorPrimaryTileColor: #1a1c;
+  --floorSecondaryTileColor: #222b;
 }
 
 * {
@@ -161,6 +163,10 @@ body {
   width: 15em;
   height: 16em;
   background-image: radial-gradient(#0000, #000 75%),
-    repeating-conic-gradient(from 45deg, #111 0deg 90deg, #222 90deg 180deg);
+    repeating-conic-gradient(
+      from 45deg,
+      var(--floorPrimaryTileColor) 0deg 90deg,
+      var(--floorSecondaryTileColor) 90deg 180deg
+    );
   background-size: 100%, 1em 1em;
 }
