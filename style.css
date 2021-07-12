@@ -1,0 +1,19 @@
+:root {
+  --bodyBackground: #000;
+
+  --boxColor: #0ff7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bodyBackground);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
