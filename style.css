@@ -28,12 +28,16 @@ body {
   height: 1em;
   border-radius: 50%;
   background-color: lightBlue;
+  position: absolute;
 }
 
 .cube {
   width: 2em;
   height: 2em;
   background: var(--boxColor);
+  position: absolute;
+  top: -1em;
+  left: -1em;
 }
 
 .floor {
@@ -45,4 +49,5 @@ body {
     #222 90deg 180deg
   );
   background-size: 1em 1em;
+  position: absolute;
 }
